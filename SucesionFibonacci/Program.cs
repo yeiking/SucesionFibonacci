@@ -6,10 +6,19 @@ using System.Threading.Tasks;
 
 namespace SucesionFibonacci
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Escribe el limite de la Sucesion:");
+            int Limite;
+            Limite = int.Parse(Console.ReadLine());
+            Metodos ins = new Metodos();
+            ins.Imprimir(Limite);
+
+            Console.ReadKey();
+
         }
+
     }
 }
